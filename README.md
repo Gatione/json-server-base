@@ -1,6 +1,6 @@
 # json-server-base
 
-Esse é o repositório com a base de JSON-Server + JSON-Server-Auth já configurada, feita para ser usada no desenvolvimento das API's nos Capstones do Q2.
+Esse é um repositório teste
 
 ## Endpoints
 
@@ -8,17 +8,30 @@ Assim como a documentação do JSON-Server-Auth traz (https://www.npmjs.com/pack
 
 ### Cadastro
 
-POST /register <br/>
-POST /signup <br/>
-POST /users
+```POST /register``` <br/>
+```POST /signup``` <br/>
+```POST /users```
 
 Qualquer um desses 3 endpoints irá cadastrar o usuário na lista de "Users", sendo que os campos obrigatórios são os de email e password.
-Você pode ficar a vontade para adicionar qualquer outra propriedade no corpo do cadastro dos usuários.
-
+A resposta será um objeto contendo o "acessToken" que contêm um token para o usuário ter acesso as ferramentas que necessitam de autorização, e "user" que contêm as informações de email, name, age e id do usuário.
 
 ### Login
 
-POST /login <br/>
-POST /signin
+```POST /login``` <br/>
+```POST /signin```
 
 Qualquer um desses 2 endpoints pode ser usado para realizar login com um dos usuários cadastrados na lista de "Users"
+A resposta será um objeto contendo o "acessToken" que contêm um token para o usuário ter acesso as ferramentas que necessitam de autorização, e "user" que contêm as informações de email, name, age e id do usuário.
+
+### Ver Posts
+
+```GET /posts```
+
+Esta rota pode ser utilizada para retornar um array com os posts.
+
+### Mensagem Para Usuários Logados
+
+```GET /welcome```
+
+Esta rota necessita de autorização utilizando o token de acesso dado quando o usuário realiza o login. No header: <br>
+```Authorization: Bearer "acessToken"```

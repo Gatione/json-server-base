@@ -6,6 +6,38 @@
       "name": "Kenzinho",
       "age": 38,
       "id": 1
+    },
+    {
+      "email": "gatobranco@gmail.com",
+      "password": "123",
+      "name": "Gato",
+      "age": 1,
+      "id": 2
+    },
+    {
+      "email": "gatobranca@gmail.com",
+      "password": "$2a$10$PNznKCEofE9DBR0wtbzJ5e02zYBQzhdWTFcypLrhmTwoN1CXDyNve",
+      "name": "Gato2",
+      "age": 2,
+      "id": 3
+    },
+    {
+      "email": "gatobranc@gmail.com",
+      "password": "$2a$10$n9TMWPpcVA4CERTPmrqIy.rE0KOAMTvO1UVe8fMKg8gKL1LlIcywu",
+      "name": "Gato3",
+      "age": 3,
+      "id": 4
     }
-  ]
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Post Teste",
+      "content": "Este é um post de teste",
+      "author": "Master"
+    }
+  ],
+  "welcome": {
+    "mensage": "Olá usuário, bem vindo a uma página para usuários logados"
+  }
 }
